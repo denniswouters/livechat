@@ -1,0 +1,208 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.topframe {
+  background-color: #E41B13;
+  width: 285px;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 5px 5px 10px;
+}
+
+.topframe p {
+  color: white;
+  font-weight: bolder;
+  margin-left: 60px;
+}
+
+img.foto-medewerker {
+  border-radius: 50px;
+  width: 35px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.online {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50px;
+  margin-left: 35px;
+  margin-top: 5px;
+  border: 2px solid white;
+}
+
+#chatframe form {
+  background-color: grey;
+  padding: 10px 15px 10px 15px;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  top: 400px;
+  width: 270px;
+  background-color: #E41B13;
+}
+
+ li {
+  background-color: white !important;
+  margin-bottom: 15px;
+  padding: 15px 15px 15px 15px;
+  width: 75%;
+  border-radius: 10px 10px 10px 0px;
+  font-size: 14px;
+  color: #808080;
+}
+
+li button {
+  color: white;
+  background-color: #808080;
+  border: none;
+  padding: 3px 5px 3px 5px;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+#chatframe {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #F9F9F9;
+  padding-top: 5px;
+  height: 380px;
+  width: 300px;
+  border-radius: 0px 0px 5px 5px;
+  overflow-y: auto;
+}
+
+#chatframe ul {
+  list-style-type: none;
+}
+
+.bottomframe {
+  background-color: white;
+  width: 285px;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px 5px 10px 5px;
+}
+
+#message {
+  width: 75%;
+  padding-right: 20px;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #E41B13;
+}
+
+.bottomframe input {
+  height: 35px;
+  padding: 6px;
+  border: none;
+}
+
+input[type="submit"] {
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #E41B13;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bottomframe form {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px !important;
+}
+
+#Livechat {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.intromessage {
+  margin-bottom: 20px;
+  color: grey;
+  font-style: italic;
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.zwaai {
+  margin-right: 10px;
+  animation-name: zwaai-animatie;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes zwaai-animatie {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
